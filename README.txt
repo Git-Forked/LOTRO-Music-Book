@@ -50,6 +50,8 @@ Installation:
 
 Unzip or 'Extact All' of the LOTRO-Music-Book*.zip to the desired location.
 
+See LOTRO_Music_Book.py for additional settings and configuration.
+
 
 LOTRO Music Book is available from:
 
