@@ -51,8 +51,18 @@ Installation:
 Unzip or 'Extact All' of the LOTRO-Music-Book*.zip to the desired location.
 
 
-Available from:
+LOTRO Music Book is available from:
 
 https://github.com/Git-Forked/LOTRO-Music-Book        <--(LATEST UPDATES)
 https://www.lotrointerface.com/downloads/info1244-LOTROMusicBook.html
 
+
+Music Files:
+
+LOTRO Music Book does not come with, nor provide, any ABC music files. 
+Files can be obtained from other sources such as: 
+
+The Fat Lute and Other .ABC Music Archive : https://www.lotrointerface.com/downloads/info1087-TheFatLuteandOther.ABCMusicArchive.html
+Zolton's Music Mega Pack : https://www.lotrointerface.com/downloads/info604-ZoltonsMusicMegaPack.html
+Music Band abc's : https://www.lotrointerface.com/downloads/info180-MusicBandabcs.html
+Raymiond's ABC Collection : https://bardsofafeather.net/library.php
