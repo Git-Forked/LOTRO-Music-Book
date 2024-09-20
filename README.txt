@@ -34,7 +34,7 @@ Required modules:
     import pyclip
 
 
-LOTRO MUsic Book preview image: 
+LOTRO Music Book preview image: 
 https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book.png
 
 
