@@ -48,7 +48,7 @@ Press the [ Play Song ] button to have your character play the song in the game 
 
 Installation:
 
-Unzip or 'Extact All' of the LOTRO Music Book*.zip to the desired location.
+Unzip or 'Extact All' of the LOTRO-Music-Book*.zip to the desired location.
 
 
 Available from:
