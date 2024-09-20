@@ -15,12 +15,13 @@ Features Include:
     • Add to a favorites list with the [ + Favorite ] button, when you find songs you like.
         Remove them with the [ - Favorites button ], if you change your mind.
     • Quick search your files, for that one you are looking for.
-    • Fancy tooltips to explain each button, and advanced tooltips when hovering over the [ Play Song ] or [ + Favorites] buttons,
-        to show detailed information about the selected ABC song file.
+    • Fancy tooltips to explain each button, and advanced tooltips when hovering over the [ Play Song ] 
+        or [ + Favorites] buttons, to show detailed information about the selected ABC song file.
     • Can display and link ABC files multiple folders deep, so you can keep them better organized.
 
 
-LOTRO Music Book should work on all systems that can run python and the required import modules, including on the following operating systems: Linux, MacOs, Windows.
+LOTRO Music Book should work on all systems that can run python and the required import modules, 
+including on the following operating systems: Linux, MacOs, Windows.
 
 
 Required modules:
