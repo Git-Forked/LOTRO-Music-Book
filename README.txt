@@ -33,6 +33,9 @@ Required modules:
     import pyclip
 
 
+![alt text](https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book.png?raw=true "LOTRO MUsic Book image")
+
+
 Suggested Usage:
 
 Log into the LOTRO game, equip your character with the instrument you want to play.
