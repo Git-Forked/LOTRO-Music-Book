@@ -33,7 +33,8 @@ Required modules:
     import pyclip
 
 
-![alt text](https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book.png?raw=true "LOTRO MUsic Book image")
+LOTRO MUsic Book preview image: 
+https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book.png
 
 
 Suggested Usage:
