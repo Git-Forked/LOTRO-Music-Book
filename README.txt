@@ -54,5 +54,5 @@ Unzip or 'Extact All' of the LOTRO-Music-Book*.zip to the desired location.
 Available from:
 
 https://github.com/Git-Forked/LOTRO-Music-Book        <--(LATEST UPDATES)
-https://www.lotrointerface.com/downloads/infoXXXX-LOTRO Music Book.html
+https://www.lotrointerface.com/downloads/info1244-LOTROMusicBook.html
 
