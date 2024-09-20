@@ -18,6 +18,7 @@ Features Include:
     • Fancy tooltips to explain each button, and advanced tooltips when hovering over the [ Play Song ] 
         or [ + Favorites] buttons, to show detailed information about the selected ABC song file.
     • Can display and link ABC files multiple folders deep, so you can keep them better organized.
+    • Buttons blink for confirmation, and do not blink on rejection of action.
 
 
 LOTRO Music Book should work on all systems that can run python and the required import modules, 
