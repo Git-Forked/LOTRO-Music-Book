@@ -50,7 +50,8 @@ Required modules:
 
 
 LOTRO Music Book preview image: 
-https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book.png
+https://raw.githubusercontent.com/Git-Forked/LOTRO-Music-Book/refs/heads/main/LOTRO_Music_Book_v0.0.21_%5B1%5D.png
+https://raw.githubusercontent.com/Git-Forked/LOTRO-Music-Book/refs/heads/main/LOTRO_Music_Book_v0.0.21_%5B2%5D.png
 
 
 Suggested Usage:
