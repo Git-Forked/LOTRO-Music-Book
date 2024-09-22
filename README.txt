@@ -1,6 +1,6 @@
 LOTRO Music Book
 
-A LOTRO (Lord of The Rings Online) side-plugin written in Python 3.12.5
+A LOTRO (Lord of The Rings Online) music assistant.
 
 
 Description:
