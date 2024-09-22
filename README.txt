@@ -8,7 +8,7 @@ Description:
 LOTRO Music Book assists players in organizing and playing over 20,000 available .abc music files with the in-game instruments.
 
 
-Features Include:
+Previous Features Include:
 
     • Change into and out of music mode quickly, with the [ Music Mode ] button.
     • Play the currently selected song in the game, with the [ Play Song ] button.
@@ -21,18 +21,32 @@ Features Include:
     • Buttons blink for confirmation, and do not blink on rejection of action.
 
 
-LOTRO Music Book should work on all systems that can run python and the required import modules, 
-including on the following operating systems: Linux, MacOs, Windows.
+New Features Include:
+
+    • A new theme.
+    • Queue list to add and remove songs from.
+    • Two new buttons: [ + Queue ] and [ - Queue ]
+    • New [ Play Queued ] button to play the top song in your queue.
+    • [ Play Queued ] button grows darker orange as queue fills up.
+        The color indicates when you will need to add more songs,
+        and turns yellow when empty.
+    • Hovering the mouse over the [ Play Queued ] button displays the queue in a tooltip.
+    • Songs are automatically removed from queue upon play.
+
+
+LOTRO Music Book was made for Linux, but should work on any system that can run python and the required imported modules.
 
 
 Required modules:
-    import pyautogui, os, glob
+    import pyautogui
+    import pyclip
+    import os
+    import glob
     from time import sleep
     from subprocess import run
     from tkinter import *
     from tkinter import ttk
     from tktooltip import ToolTip
-    import pyclip
 
 
 LOTRO Music Book preview image: 
