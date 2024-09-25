@@ -45,7 +45,8 @@ Newer Features Include:
 LOTRO Music Book was made for Linux, but should work on any system that can run python and the required imported modules.
 
 
-Required modules:
+Required modules and packages:
+
     import pyautogui
     import pyclip
     import os
@@ -55,6 +56,8 @@ Required modules:
     from tkinter import *
     from tkinter import ttk
     from tktooltip import ToolTip
+
+    xdotool
 
 
 LOTRO Music Book preview image: 
