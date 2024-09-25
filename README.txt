@@ -8,7 +8,7 @@ Description:
 LOTRO Music Book assists players in organizing and playing over 20,000 available .abc music files with the in-game instruments.
 
 
-Previous Features Include:
+Features Include:
 
     • Change into and out of music mode quickly, with the [ Music Mode ] button.
     • Play the currently selected song in the game, with the [ Play Song ] button.
@@ -34,6 +34,14 @@ New Features Include:
     • Songs are automatically removed from queue upon play.
 
 
+Newer Features Include:
+
+    • Sync Mode controls for synchronizing the songs with other players.
+    • Queue list now has its own list box.
+    • [ Clear Queue ] button to empty the queue list.
+    • Played list to show previously played songs.
+
+
 LOTRO Music Book was made for Linux, but should work on any system that can run python and the required imported modules.
 
 
@@ -50,14 +58,17 @@ Required modules:
 
 
 LOTRO Music Book preview image: 
-https://raw.githubusercontent.com/Git-Forked/LOTRO-Music-Book/refs/heads/main/LOTRO_Music_Book_v0.0.21_%5B1%5D.png
-https://raw.githubusercontent.com/Git-Forked/LOTRO-Music-Book/refs/heads/main/LOTRO_Music_Book_v0.0.21_%5B2%5D.png
+
+https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book_v0.0.21_%5B1%5D.png
+https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book_v0.0.21_%5B2%5D.png
+https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book_v0.0.18.png
 
 
 Suggested Usage:
 
 Log into the LOTRO game, equip your character with the instrument you want to play.
-Launch LOTRO Music Book, and click the [ Music Mode ] button to put your character into music playing mode.
+Launch LOTRO_Music_Book.py
+and click the [ Music Mode ] button to put your character into music playing mode.
 Choose a song from your collection which will appear in the list box.
 Press the [ Play Song ] button to have your character play the song in the game on your instrument.
 
