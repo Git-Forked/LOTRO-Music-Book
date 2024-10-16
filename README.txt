@@ -15,8 +15,8 @@ Features Include:
     • Add to a favorites list with the [ + Favorite ] button, when you find songs you like.
         Remove them with the [ - Favorites button ], if you change your mind.
     • Quick search your files, for that one you are looking for.
-    • Fancy tooltips to explain each button, and advanced tooltips when hovering over the [ Play Song ] 
-        or [ + Favorites] buttons, to show detailed information about the selected ABC song file.
+    • Fancy tooltips to explain each button, and advanced tooltips when hovering over the [ Play Song ],
+        [ + Favorites], or [ + Queue ] buttons, to show detailed information about the selected ABC song file.
     • Can display and link ABC files multiple folders deep, so you can keep them better organized.
     • Buttons blink for confirmation, and do not blink on rejection of action.
 
@@ -42,26 +42,40 @@ Newer Features Include:
     • Played list to show previously played songs.
 
 
+Newest Features Include:
+
+    • Multi-track file handling capabilities and track selector.
+
+
 LOTRO Music Book was made for Linux, but should work on any system that can run python and the required imported modules.
 
 
-Required modules and packages:
+Required python modules:
 
-    import pyautogui
-    import pyclip
-    import os
-    import glob
-    from time import sleep
-    from subprocess import run
-    from tkinter import *
-    from tkinter import ttk
-    from tktooltip import ToolTip
+    Install with pip:
+        pyclip
+        pyautogui
+        tktooltip (sometimes called tkinter-tooltip)(a copy is also included)
 
+    Provided by python package in binary distributions, otherwise install via pip:
+        tkinter
+
+    Provided by python:
+        os
+        glob
+        time
+        subprocess
+
+Required package on Linux:
     xdotool
+
+Required python module on Windows:
+    pygetwindow
 
 
 LOTRO Music Book preview image: 
 
+https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book_v0.0.33.png
 https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book_v0.0.30_%5B1%5D.png
 https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book_v0.0.30_%5B2%5D.png
 https://github.com/Git-Forked/LOTRO-Music-Book/blob/main/LOTRO_Music_Book_v0.0.21_%5B1%5D.png
