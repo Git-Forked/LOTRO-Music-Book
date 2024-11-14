@@ -48,7 +48,7 @@ from tktooltip import ToolTip
 if using_Windows == True:
     import pygetwindow as pgw
 
-version = '0.0.33'
+version = '0.0.34'
 
 title_and_version = 'LOTRO Music Book - made with love ❤ by Git-Forked - v'+version
 
@@ -62,7 +62,7 @@ titles = [Collection_title, Favorites_title, Queue_title, Played_title, Search_R
 
 print(title_and_version)
 
-horizontal_rule = '\n<:::::::::::::::::::::::}]xxxx()o ♪♫ .ılılıll|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅|llılılı. ♫♪ o()xxxx[{:::::::::::::::::::::::>\n'
+horizontal_rule = '\n<:::::::::::::::::::::::}]xxxx()o ♫♪ .ılılıll|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅|llılılı. ♪♫ o()xxxx[{:::::::::::::::::::::::>\n'
 horizontal_rule2 = '\n<:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::>\n'
 
 def print_intro():
@@ -207,11 +207,11 @@ def check_queue():
         # This tooltip need to be: x_offset=-100, y_offset=-100
     else:
         play_queue_button_tooltip.destroy()
-        play_queue_button_tooltip = ToolTip(play_queue_button, 'Play the top song in your queue.', delay=0, follow=True, x_offset=-100, y_offset=-50, parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
+        play_queue_button_tooltip = ToolTip(play_queue_button, 'Play the top song in your queue.', delay=0, follow=True, x_offset=-150, y_offset=-50, parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
 
 # Populate files_listbox
 def populate_listbox():
-    files_listbox.delete(0,END)
+    files_listbox.delete(0, END)
     files_listbox.insert(0, *files)
     files_listbox.insert(0, Collection_title)
     files_listbox.insert(0, *favorites)
@@ -219,7 +219,7 @@ def populate_listbox():
 
 # Populate search results
 def populate_listbox_search_results():
-    files_listbox.delete(0,END)
+    files_listbox.delete(0, END)
     files_listbox.insert(0, *files_searched)
     files_listbox.insert(0, Search_Results_title)
 
@@ -343,6 +343,7 @@ def play_start_sync():
     play_start_sync_button.flash()
     print('\n@ Start Sync\n')
 
+# Sync Mode
 def sync_state():
     global sync
     global play_start_sync_button
@@ -381,14 +382,14 @@ tracks = []
 tracks_with_part_names = []
 
 def on_select(event):
-    #print('Event: \t\t'+str(event)) # Debug
+    #print('Event: \t\t'+str(event)) # Debug Information
     save_selected()
     selection = event.widget.curselection()
     if selection:
         print('Selection Number: \t\t' + str(selection))
         index = selection[0]
         song = event.widget.get(index)
-        print('Song Selected: \t\t\t' + song)
+        print('Selected: \t\t\t' + song)
         if song not in titles:
             song_information = ''
             track_number = ''
@@ -434,12 +435,25 @@ def on_select(event):
             global add_queue_button_tooltip
             if song_information != '':
                 print('\nSong File Information: \n' + song_information)
+
+                song_information_numbers_of_lines = 0
+                song_information_length_of_longest_line = 0
+                lines = song_information.split('\n')
+                for line in lines:
+                    #print('\nline = ' + line) # Debug Information
+                    song_information_numbers_of_lines += 1
+                    if len(line) > song_information_length_of_longest_line:
+                        song_information_length_of_longest_line = len(line)
+
+                xoffset = (-(100+(song_information_length_of_longest_line*6)))
+                yoffset = (-(100+(song_information_numbers_of_lines*5)))
+
                 play_song_button_tooltip.destroy()
                 add_favorite_button_tooltip.destroy()
                 add_queue_button_tooltip.destroy()
-                play_song_button_tooltip = ToolTip(play_song_button, song_information, delay=0, follow=True, x_offset=(-(100+round(len(song_information)))), y_offset=(-(100+round(len(song_information)/20))), parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
-                add_favorite_button_tooltip = ToolTip(add_favorite_button, song_information, delay=0, follow=True, x_offset=(-(100+round(len(song_information)))), y_offset=(-(100+round(len(song_information)/20))), parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
-                add_queue_button_tooltip = ToolTip(add_queue_button, song_information, delay=0, follow=True, x_offset=(-(100+round(len(song_information)))), y_offset=(-(100+round(len(song_information)/20))), parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
+                play_song_button_tooltip = ToolTip(play_song_button, song_information, delay=0, follow=True, x_offset=xoffset, y_offset=yoffset, parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
+                add_favorite_button_tooltip = ToolTip(add_favorite_button, song_information, delay=0, follow=True, x_offset=xoffset, y_offset=yoffset, parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
+                add_queue_button_tooltip = ToolTip(add_queue_button, song_information, delay=0, follow=True, x_offset=xoffset, y_offset=yoffset, parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
                 # These tooltips need to be: x_offset=-100, y_offset=-100
             else:
                 print('\nFile contains no song information.')
@@ -574,7 +588,7 @@ queue_listbox.insert(0, Queue_title)
 
 def populate_queue():
     global queue_listbox
-    queue_listbox.delete(0,END)
+    queue_listbox.delete(0, END)
     queue_listbox.insert(0, *queue)
     queue_listbox.insert(0, Queue_title)
 
@@ -587,7 +601,7 @@ def played(song):
     played_list.reverse()   # Pre-reverse so songs end up in reverse order after next reverse
     played_list.append(song)
     played_list.reverse()   # Reverse to show most recent songs played at the top.
-    played_listbox.delete(0,END)
+    played_listbox.delete(0, END)
     played_listbox.insert(0, *played_list)
     played_listbox.insert(0, Played_title)
 
@@ -641,7 +655,7 @@ remove_queue_button.configure(font=('Arial','14','bold'))
 remove_queue_button.grid(row=1, column=2, sticky='ew')
 
 play_queue_button = Button(buttons_frame, text='Play Queued', bg='yellow', fg='black', activebackground='red', activeforeground='white', command=play_queue)
-play_queue_button_tooltip = ToolTip(play_queue_button, 'Play the top song in your queue.', delay=0, follow=True, x_offset=-100, y_offset=-50, parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
+play_queue_button_tooltip = ToolTip(play_queue_button, 'Play the top song in your queue.', delay=0, follow=True, x_offset=-150, y_offset=-50, parent_kwargs={"bg": "black", "padx":5, "pady":5}, fg="#ffffff", bg="#1c1c1c")
 play_queue_button.configure(font=('Arial','14','bold'))
 play_queue_button.grid(row=0, column=3, sticky='ew')
 
@@ -660,17 +674,11 @@ sync = IntVar()
 sync_checkbox = Checkbutton(buttons_frame, text='Sync Mode', variable=sync, onvalue=1, offvalue=0, selectcolor="gray", activebackground="black", activeforeground='white', bg='black', padx=5, pady=5, fg='white', command=sync_state)
 sync_checkbox.grid(row=2, column=1, sticky='ew')
 
-# Multi-track support
-#def track_selected(event):
-    #restore_selected()
-#    event.widget.focus_set()
-
 track_label = Label(buttons_frame, text='Track')
 track_label.configure(bg='black', fg='white')
 track_label.grid(row=2, column=2, sticky='e', padx=10)
 
 track_selector = ttk.Combobox(buttons_frame, state="readonly", text='Track', width=4, takefocus=0)
-#track_selector.bind("<<ComboboxSelected>>", track_selected)
 track_selector.grid(row=2, column=3, sticky='ew')
 
 print_intro()
