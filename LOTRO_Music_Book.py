@@ -48,7 +48,7 @@ from tktooltip import ToolTip
 if using_Windows == True:
     import pygetwindow as pgw
 
-version = '0.0.34'
+version = '0.0.35'
 
 title_and_version = 'LOTRO Music Book - made with love ❤ by Git-Forked - v'+version
 
@@ -678,12 +678,16 @@ track_label = Label(buttons_frame, text='Track')
 track_label.configure(bg='black', fg='white')
 track_label.grid(row=2, column=2, sticky='e', padx=10)
 
-track_selector = ttk.Combobox(buttons_frame, state="readonly", text='Track', width=4, takefocus=0)
+def comboboxselected(event):
+    track = track_selector.get()#.split(' : ')[0].strip()
+    print('Track ' + track + ' selected.')
+
+track_selector = ttk.Combobox(buttons_frame, state="readonly", text='Track', width=4, takefocus=0)#, exportselection=True)
+track_selector.configure(exportselection=False)
+track_selector.bind('<<ComboboxSelected>>', comboboxselected)
 track_selector.grid(row=2, column=3, sticky='ew')
 
 print_intro()
 
 # Start main loop for GUI to display
 book.mainloop()
-
-
