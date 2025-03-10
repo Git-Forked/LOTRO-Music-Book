@@ -48,7 +48,7 @@ from tktooltip import ToolTip
 if using_Windows == True:
     import pygetwindow as pgw
 
-version = '0.0.35'
+version = '0.0.36'
 
 title_and_version = 'LOTRO Music Book - made with love ❤ by Git-Forked - v'+version
 
@@ -337,9 +337,6 @@ def play_queue():
 def play_start_sync():
     pyclip.copy('/playstart')
     paste_to_game()
-    played(song)
-    populate_queue()
-    check_queue()
     play_start_sync_button.flash()
     print('\n@ Start Sync\n')
 
