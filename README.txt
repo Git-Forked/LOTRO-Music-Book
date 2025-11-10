@@ -113,4 +113,6 @@ Files can be obtained from other sources such as:
 The Fat Lute and Other .ABC Music Archive : https://www.lotrointerface.com/downloads/info1087-TheFatLuteandOther.ABCMusicArchive.html
 Zolton's Music Mega Pack : https://www.lotrointerface.com/downloads/info604-ZoltonsMusicMegaPack.html
 Music Band abc's : https://www.lotrointerface.com/downloads/info180-MusicBandabcs.html
+Fortes Songbook : https://www.lotrointerface.com/downloads/info931-FortesSongbook.html
 Raymiond's ABC Collection : https://bardsofafeather.net/library.php
+Pontin's Music : https://drive.google.com/drive/folders/1yWsLVHLRe_IpO3tY4lJ-gK6mSUSZxqtY
